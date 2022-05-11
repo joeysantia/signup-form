@@ -1,0 +1,113 @@
+
+:root {
+    height: 100vh;
+    width: 100vw;
+    font-family: "Fredoka";
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100wh;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.logo-container {
+    min-width: 40%;
+    background: url(water.jpg);
+    background-size: cover;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    padding-bottom: 24px;
+    top: 10%;
+    font-family: "Lobster";
+    font-size: 52px;
+    letter-spacing: 2px;
+    background: rgba(0,0,0,0.2)
+}
+
+h1::before {
+    content: url(sunglasses.png);
+    position: relative;
+    top: 20px;
+    right: 10px;
+}
+
+header {
+    font-size: 1.5rem;
+}
+
+legend {
+    font-size: 1.25rem;
+}
+
+.form-container {
+    padding: 5%;
+    background: rgba(156, 107, 206, 0.2);
+}
+
+form {
+    margin-top: 72px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: 16px;
+}
+
+label {
+    display: block;
+    font-weight: 300;
+}
+
+input {
+    border-radius: 4px;
+    border: 2px solid #cccccc;
+    
+}
+
+input:hover {
+    border: 2px solid black;
+}
+
+input:focus:required:invalid {
+    background: rgb(250, 206, 213, 0.4)
+}
+
+
+
+.form-grid p:last-child {
+    position: relative;
+    top: -28px;
+    font-size: .8em;
+}
+
+footer p {
+    margin-top: 36px;
+}
+
+button {
+    background: rgba(156, 107, 206, 0.8);
+    border: 1px solid #cccccc;
+    padding: 8px 32px;
+    border-radius: 4px;
+    font-size: 1.125em;
+}
+
+button:hover {
+    background: rgba(156, 107, 206, 1)
+}
+
+a {
+    text-decoration: none;
+    color:rgb(31, 28, 226);
+    font-weight: 500;
+}
